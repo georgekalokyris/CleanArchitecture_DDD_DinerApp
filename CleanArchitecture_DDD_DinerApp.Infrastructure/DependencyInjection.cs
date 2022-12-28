@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using CleanArchitecture_DDD_DinerApp.Application.Common.Authentication;
+using CleanArchitecture_DDD_DinerApp.Infrastructure.Authentication;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanArchitecture_DDD_DinerApp.Infrastructure;
 
@@ -7,6 +9,8 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
+        services.AddSingleton<IjwtTokenGenerator, jwtTokenGenerator>();
+
         return services;
     }
 }
