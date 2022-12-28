@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture_DDD_DinerApp.API", "CleanArchitecture_DDD_DinerApp.API\CleanArchitecture_DDD_DinerApp.API.csproj", "{4EF6D682-F78A-4075-8131-0C872B03A909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture_DDD_DinerApp.Contracts", "CleanArchitecture_DDD_DinerApp.Contracts\CleanArchitecture_DDD_DinerApp.Contracts.csproj", "{BC993C5F-20C7-4115-BF14-975B27D2D0B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture_DDD_DinerApp.Infrastructure", "CleanArchitecture_DDD_DinerApp.Infrastructure\CleanArchitecture_DDD_DinerApp.Infrastructure.csproj", "{02667AD4-F5F7-4670-B012-5BC3F160B2C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture_DDD_DinerApp.Application", "CleanArchitecture_DDD_DinerApp.Application\CleanArchitecture_DDD_DinerApp.Application.csproj", "{B1C20B57-41F6-444A-A178-6AD130E41C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture_DDD_DinerApp.Domain", "CleanArchitecture_DDD_DinerApp.Domain\CleanArchitecture_DDD_DinerApp.Domain.csproj", "{F432A032-5B88-48AE-A586-A1F83D18CDFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EF6D682-F78A-4075-8131-0C872B03A909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF6D682-F78A-4075-8131-0C872B03A909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF6D682-F78A-4075-8131-0C872B03A909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF6D682-F78A-4075-8131-0C872B03A909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC993C5F-20C7-4115-BF14-975B27D2D0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC993C5F-20C7-4115-BF14-975B27D2D0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC993C5F-20C7-4115-BF14-975B27D2D0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC993C5F-20C7-4115-BF14-975B27D2D0B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02667AD4-F5F7-4670-B012-5BC3F160B2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02667AD4-F5F7-4670-B012-5BC3F160B2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02667AD4-F5F7-4670-B012-5BC3F160B2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02667AD4-F5F7-4670-B012-5BC3F160B2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C20B57-41F6-444A-A178-6AD130E41C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C20B57-41F6-444A-A178-6AD130E41C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C20B57-41F6-444A-A178-6AD130E41C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C20B57-41F6-444A-A178-6AD130E41C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F432A032-5B88-48AE-A586-A1F83D18CDFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F432A032-5B88-48AE-A586-A1F83D18CDFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F432A032-5B88-48AE-A586-A1F83D18CDFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F432A032-5B88-48AE-A586-A1F83D18CDFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE669416-E4F2-48D2-BA8E-B0E83D96CFE6}
+	EndGlobalSection
+EndGlobal
