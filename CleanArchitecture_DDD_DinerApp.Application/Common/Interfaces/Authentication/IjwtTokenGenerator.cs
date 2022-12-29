@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture_DDD_DinerApp.Application.Common.Authentication;
+﻿namespace CleanArchitecture_DDD_DinerApp.Application.Common.Interfaces.Authentication;
 
 public interface IjwtTokenGenerator
 {

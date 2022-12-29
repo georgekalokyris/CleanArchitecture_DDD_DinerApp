@@ -1,4 +1,4 @@
-﻿using CleanArchitecture_DDD_DinerApp.Application.Common.Authentication;
+﻿using CleanArchitecture_DDD_DinerApp.Application.Common.Interfaces.Authentication;
 using CleanArchitecture_DDD_DinerApp.Application.Services.Authentication;
 using Microsoft.Extensions.DependencyInjection;
 
