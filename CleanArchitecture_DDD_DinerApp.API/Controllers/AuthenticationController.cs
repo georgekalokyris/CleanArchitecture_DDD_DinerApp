@@ -21,7 +21,12 @@ public class AuthenticationController : ControllerBase
                                                          registerRequest.LastName,
                                                          registerRequest.Email,
                                                          registerRequest.Password);
-        var response = new AuthenticationResponse(authResult.Id, authResult.FirstName, authResult.LastName, authResult.Email, authResult.Token);
+        
+        var response = new AuthenticationResponse(authResult.user.Id,
+                                                  authResult.user.FirstName,
+                                                  authResult.user.LastName,
+                                                  authResult.user.Email,
+                                                  authResult.Token);
 
         return Ok(response);
     }
@@ -32,7 +37,11 @@ public class AuthenticationController : ControllerBase
         var authResult = _authenticationService.Login(loginRequest.Email,
                                                       loginRequest.Password);
 
-        var response = new AuthenticationResponse(authResult.Id, authResult.FirstName, authResult.LastName, authResult.Email, authResult.Token);
+        var response = new AuthenticationResponse(authResult.user.Id,
+                                                  authResult.user.FirstName,
+                                                  authResult.user.LastName,
+                                                  authResult.user.Email,
+                                                  authResult.Token);
 
         return Ok(response);
     }

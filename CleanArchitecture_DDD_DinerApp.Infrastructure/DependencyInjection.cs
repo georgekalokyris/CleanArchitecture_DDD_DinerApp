@@ -4,6 +4,8 @@ using CleanArchitecture_DDD_DinerApp.Infrastructure.Authentication;
 using CleanArchitecture_DDD_DinerApp.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection; 
 using Microsoft.Extensions.Configuration;
+using CleanArchitecture_DDD_DinerApp.Infrastructure.Persistence;
+using CleanArchitecture_DDD_DinerApp.Application.Common.Interfaces.Persistence;
 
 namespace CleanArchitecture_DDD_DinerApp.Infrastructure;
 
@@ -16,6 +18,7 @@ public static class DependencyInjection
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
         services.AddSingleton<IjwtTokenGenerator, jwtTokenGenerator>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+        services.AddScoped<IUserRepository, UserRepository>();
 
         return services;
     }
