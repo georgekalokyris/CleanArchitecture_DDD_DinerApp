@@ -1,10 +1,12 @@
-﻿using CleanArchitecture_DDD_DinerApp.Application.Services.Authentication;
+﻿using CleanArchitecture_DDD_DinerApp.API.Filters;
+using CleanArchitecture_DDD_DinerApp.Application.Services.Authentication;
 using CleanArchitecture_DDD_DinerApp.Contracts.Authentication;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchitecture_DDD_DinerApp.API.Controllers;
 [ApiController]
 [Route("auth")]
+//[ErrorHandlingFilter] We registered this one instead at the Program.cs instead of putting it in every controller
 public class AuthenticationController : ControllerBase
 {
     private readonly IAuthenticationService _authenticationService;
