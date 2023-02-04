@@ -1,4 +1,5 @@
-﻿using CleanArchitecture_DDD_DinerApp.Application.Common.Interfaces.Authentication;
+﻿using CleanArchitecture_DDD_DinerApp.Application.Common.Errors;
+using CleanArchitecture_DDD_DinerApp.Application.Common.Interfaces.Authentication;
 using CleanArchitecture_DDD_DinerApp.Application.Common.Interfaces.Persistence;
 using CleanArchitecture_DDD_DinerApp.Domain.Entities;
 
@@ -38,7 +39,7 @@ public class AuthenticationService : IAuthenticationService
         //Validate the user doesnt exist
         if(_userRepository.GetUserByEmail(email) is not null)
         {
-            throw new Exception("User with given email already exists");
+            throw new DuplicateEmailException();
         }
         //Create user (generate unique ID) and persist to db
         var user = new User

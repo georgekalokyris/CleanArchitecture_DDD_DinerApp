@@ -1,4 +1,4 @@
-using CleanArchitecture_DDD_DinerApp.API.Filters;
+ using CleanArchitecture_DDD_DinerApp.API.Filters;
 using CleanArchitecture_DDD_DinerApp.API.Middleware;
 using CleanArchitecture_DDD_DinerApp.Application;
 using CleanArchitecture_DDD_DinerApp.Infrastructure;
@@ -14,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 {
    //app.UseMiddleware<ErrorHandlingMiddleware>();
-   //app.UseExceptionHandler("/error");
+   app.UseExceptionHandler("/error");
 
     app.UseHttpsRedirection();
 
